@@ -62,8 +62,7 @@ int _printf(const char *format, ...)
 	int result;
 	va_list arguments;
 
-	s_printf f_arr[] = 
-	{
+	s_printf f_arr[] = {
 		{"c", print_char},
 		{"s", print_str},
 		{"%", print_percent},

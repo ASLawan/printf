@@ -10,19 +10,19 @@
 /**
  * struct s_printf - matches specifier to function
  * @spe: specifier
- * @func: function pointer 
+ * @func: function pointer
  * Description: matches format specifiers to functions
  */
 typedef struct s_printf
 {
 	char *spe;
 	int (*func)(va_list);
-}s_printf;
+} s_printf;
 
 /*******************function prototypes*****************/
 
 int print_char(va_list a);
-int print_percent();
+int print_percent(void);
 int print_str(va_list a);
 int str_len(char *s);
 int str_len_const(char *s);
