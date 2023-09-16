@@ -69,6 +69,8 @@ int _printf(const char *format, ...)
 		{"b", print_bin},
 		{"u", print_unsigned},
 		{"o", print_octal};
+		{"d", print_int},
+		{"i", print_int},
 		{NULL, NULL}
 	};
 

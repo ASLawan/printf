@@ -31,6 +31,6 @@ int _printf(const char *format, ...);
 int print_bin(va_list a);
 int print_unsgined(va_list a);
 int print_octal(va_list a);
-
+int print_integer(va_list a);
 
 #endif
