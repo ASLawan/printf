@@ -11,7 +11,6 @@ int print_int(va_list a)
 	int nbr = va_arg(a, int);
 	int len = 0;
 
-    /* Print the integer */
 	if (nbr < 0)
 	{
 		_putchar('-');
