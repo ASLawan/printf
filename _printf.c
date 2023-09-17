@@ -68,9 +68,11 @@ int _printf(const char *format, ...)
 		{"%", print_percent},
 		{"b", print_bin},
 		{"u", print_unsigned},
-		{"o", print_octal};
+		{"o", print_octal},
 		{"d", print_int},
 		{"i", print_int},
+		{"x", print_hex},
+		{"X", print_Hex},
 		{NULL, NULL}
 	};
 
