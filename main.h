@@ -6,6 +6,7 @@
 #include <string.h>
 #include <stdio.h>
 #include <limits.h>
+#include <stdlib.h>
 
 /**
  * struct s_printf - matches specifier to function
@@ -22,15 +23,17 @@ typedef struct s_printf
 /*******************function prototypes*****************/
 
 int print_char(va_list a);
-int print_percent(void);
+int print_percent();
 int print_str(va_list a);
 int str_len(char *s);
 int str_len_const(char *s);
 int _putchar(char c);
 int _printf(const char *format, ...);
 int print_bin(va_list a);
-int print_unsgined(va_list a);
+int print_unsigned(va_list a);
 int print_octal(va_list a);
-int print_integer(va_list a);
+int print_int(va_list a);
+int print_hex(va_list a);
+int print_Hex(va_list a);
 
 #endif
