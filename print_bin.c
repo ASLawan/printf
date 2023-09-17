@@ -3,34 +3,24 @@
 /**
  * print_bin - prints binary numbers
  * @a: unnamed arguments
- * Return: binary number
+ * Return: number of arguments
  */
+
 int print_bin(va_list a)
 {
-	int i, count = 0, n;
+	unsigned int num = va_arg(a, unsigned int);
+	int count = 0, j, binary[32];
 
-	n = va_arg(a, int);
-
-	for (i = 31; i >= 0; i--)
+	while (num > 0)
 	{
-		if ((n & (1 << i)) != 0)
-		{
-			break;
-		}
-	}
-	for (; i >= 0; i--)
-	{
-		if ((n & (1 << i)) != 0)
-		{
-			_putchar('1');
-		}
-		else
-		{
-			_putchar('0');
-		}
+		binary[count] = num % 2;
+		num /= 2;
 		count++;
 	}
 
+	for (j = count - 1; j >= 0; j--)
+	{
+		_putchar(binary[j] + '0');
+	}
 	return (count);
 }
-
