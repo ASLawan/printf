@@ -23,7 +23,9 @@ int _printf(const char *format, ...)
 		{"x", print_hex},
 		{"X", print_Hex},
 		{"p", print_address},
-		{"S". print_Str},
+		{"S", print_Str},
+		{"R", print_rot13},
+		{"r", print_reversed},
 		{NULL, NULL}
 	};
 
