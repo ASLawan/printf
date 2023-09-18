@@ -36,5 +36,6 @@ int print_int(va_list a);
 int print_hex(va_list a);
 int print_Hex(va_list a);
 int select_func(const char *f, s_printf f_arr[], va_list a);
+int print_address(va_list a);
 
 #endif
