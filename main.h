@@ -20,7 +20,7 @@ typedef struct s_printf
 	int (*func)(va_list);
 } s_printf;
 
-#define BUFF_SIZE 1024
+/*#define BUFF_SIZE 1024*/
 /*******************function prototypes*****************/
 
 int print_char(va_list a);
