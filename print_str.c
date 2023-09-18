@@ -8,26 +8,26 @@
 
 int print_str(va_list a)
 {
-	int i, len;
-	char *s = va_arg(a, char *);
+	int i, count;
+	char *str = va_arg(a, char *);
 
-	if (s == NULL)
+	if (str == NULL)
 	{
-		s = "(nil)";
-		len = str_len(s);
-		for (i = 0; i < len; i++)
+		str = "(null)";
+		count = str_len(str);
+		for (i = 0; i < count; i++)
 		{
-			_putchar(s[i]);
+			_putchar(str[i]);
 		}
 	}
 	else
 	{
-		len = str_len(s);
-		for (i = 0; i < len; i++)
+		count = str_len(str);
+		for (i = 0; i < count; i++)
 		{
-			_putchar(s[i]);
+			_putchar(str[i]);
 		}
 	}
-	return (len);
+	return (count);
 
 }
