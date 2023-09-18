@@ -23,7 +23,7 @@ typedef struct s_printf
 /*******************function prototypes*****************/
 
 int print_char(va_list a);
-int print_percent();
+int print_percent(va_list);
 int print_str(va_list a);
 int str_len(char *s);
 int str_len_const(char *s);
@@ -35,5 +35,6 @@ int print_octal(va_list a);
 int print_int(va_list a);
 int print_hex(va_list a);
 int print_Hex(va_list a);
+int select_func(const char *f, s_printf f_arr[], va_list a);
 
 #endif
