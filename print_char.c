@@ -3,7 +3,7 @@
 /**
  * print_char - prints characters
  * @a: unnamed arguments
- * Return: 0 always
+ * Return: number of characters
  */
 
 int print_char(va_list a)
@@ -13,5 +13,5 @@ int print_char(va_list a)
 	c = va_arg(a, int);
 	_putchar(c);
 
-	return (0);
+	return (1);
 }
