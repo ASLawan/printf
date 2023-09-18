@@ -24,7 +24,7 @@ typedef struct s_printf
 /*******************function prototypes*****************/
 
 int print_char(va_list a);
-int print_percent(va_list);
+int print_percent(void);
 int print_str(va_list a);
 int str_len(char *s);
 int str_len_const(char *s);

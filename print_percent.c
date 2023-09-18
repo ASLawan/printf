@@ -6,13 +6,8 @@
  * Return: always 0
  */
 
-int print_percent(va_list a)
+int print_percent(void)
 {
-	int c = va_arg(a, int);
-
-	if(!c)
-		return (0);
-
 	_putchar('%');
 	return (1);
 }
