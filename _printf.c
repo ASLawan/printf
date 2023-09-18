@@ -23,6 +23,7 @@ int _printf(const char *format, ...)
 		{"x", print_hex},
 		{"X", print_Hex},
 		{"p", print_address},
+		{"S". print_Str},
 		{NULL, NULL}
 	};
 
