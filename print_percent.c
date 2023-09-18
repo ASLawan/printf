@@ -10,7 +10,9 @@ int print_percent(va_list a)
 {
 	int c = va_arg(a, int);
 
-	if (c)
-		_putchar('%');
+	if(!c)
+		return (0);
+
+	_putchar('%');
 	return (1);
 }
