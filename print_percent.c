@@ -2,7 +2,6 @@
 
 /**
  * print_percent - prints percent sign
- * @a: unnamed arguments
  * Return: always 0
  */
 
