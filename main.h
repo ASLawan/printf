@@ -18,30 +18,30 @@
 #define S_SHORT 1
 
 /**
- * struct fmt - Struct
- * @fmt: The format.
- * @fn: Associated function
+ * struct fmat - Struct
+ * @fmat: The format.
+ * @fxn: Associated function
  */
 
-struct fmt
+struct fmat
 
 {
 
-	char fmt;
-	int (*fn)(va_list, char[], int, int, int, int);
+	char fmat;
+	int (*fxn)(va_list, char[], int, int, int, int);
 
 };
 
 /**
- * typedef struct fmt fmt_t - Struct defination type
- * @fmt: The formats.
- * @fm__t: The associated function.
+ * typedef struct fmat fmt_t - Struct defination type
+ * @fmat: The formats.
+ * @fmat_t: The associated function.
  */
 
-typedef struct fmt fmt_t;
+typedef struct fmat fmat_t;
 
 	int _printf(const char *format, ...);
-	int to_handle_print(const char *fmt, int *i,
+	int to_handle_print(const char *fmat, int *q,
 		va_list list, char buffer[], int flags, int width, int precision, int size);
 
 
